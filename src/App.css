@@ -16,16 +16,24 @@ nav {
   height: 60px;
   width: 100%;
   margin: 0;
+  background-color: #000000;
   border-bottom: 1px solid grey;
   display: grid;
   place-items: center;
 }
 
 nav h1 {
-  margin: 0;
+  margin: 15px;
   font-family: Helvetica, Arial, sans-serif;
-  color: white;
+  /* color: white; */
   font-size: 45px;
+  background: #ff179a;
+  background: -webkit-linear-gradient(to left, #ff179a 0%, #00ffff 100%);
+  background: -moz-linear-gradient(to left, #ff179a 0%, #00ffff 100%);
+  background: linear-gradient(to left, #ff179a 0%, #00ffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .game {
   width: 100vw;
@@ -39,8 +47,9 @@ nav h1 {
 .board {
   width: 450px;
   height: 550px;
-  border: 1px solid black;
+  /* border: 3px solid rgb(0, 0, 0); */
   display: flex;
+  border-radius: 10px;
   flex-direction: column;
 }
 
@@ -53,9 +62,10 @@ nav h1 {
 
 .letter {
   flex: 33%;
-  height: 100%;
-  border: 1px solid grey;
-  margin: 5px;
+  height: 80%;
+  border: 2px solid grey;
+  margin: 6px 5px;
+  border-radius: 10px;
   display: grid;
   place-items: center;
   font-size: 30px;
@@ -63,16 +73,23 @@ nav h1 {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
 }
+.letter:hover {
+  transition: 200ms ease-in;
+  transform: scale(1.1);
+}
 
 #correct {
+  transition: 200ms ease-in;
   background-color: #528d4e;
 }
 
 #almost {
+  transition: 200ms ease-in;
   background-color: #b49f39;
 }
 
 #error {
+  transition: 200ms ease-in;
   background-color: #3a393c;
 }
 
@@ -106,17 +123,22 @@ nav h1 {
 }
 
 .key {
-  width: 50px;
+  width: 60px;
   height: 70px;
   margin: 5px;
-  border-radius: 4px;
+  border-radius: 10px;
   display: grid;
   place-items: center;
   font-size: 20px;
-  background-color: grey;
+  background-color: rgb(93, 93, 93);
   color: white;
   font-family: Helvetica, Arial, sans-serif;
   cursor: pointer;
+}
+
+.key:hover {
+  transition: 150ms ease-in;
+  background-color: rgb(53, 53, 56);
 }
 
 #big {
