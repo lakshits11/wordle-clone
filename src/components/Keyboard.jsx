@@ -74,7 +74,7 @@ const Keyboard = () => {
         })}
       </div>
       <div className="line3">
-        <Key keyValue={'ENTER'} bigKey />
+        <Key keyValue={'⏎'} bigKey />
         {keys3.map((key) => {
           return (
             <Key
@@ -85,7 +85,7 @@ const Keyboard = () => {
             />
           );
         })}
-        <Key keyValue={'DELETE'} bigKey />
+        <Key keyValue={'⌫'} bigKey />
       </div>
     </div>
   );

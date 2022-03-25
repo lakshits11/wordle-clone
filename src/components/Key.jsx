@@ -5,9 +5,9 @@ const Key = ({ keyValue, bigKey, disabled, almost, correct }) => {
   const { onSelectLetter, onDelete, onEnter } = useContext(AppContext);
 
   const selectLetter = () => {
-    if (keyValue === 'ENTER') {
+    if (keyValue === '⏎') {
       onEnter();
-    } else if (keyValue === 'DELETE') {
+    } else if (keyValue === '⌫') {
       onDelete();
     } else {
       onSelectLetter(keyValue);

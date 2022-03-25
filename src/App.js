@@ -55,11 +55,14 @@ function App() {
       alert('Word not found!');
     }
 
-    if (currWord === correctWord.toUpperCase() && currentAttempt.attempt <= 5) {
+    if (currWord.toUpperCase() === correctWord.toUpperCase()) {
       setGameOver({ gameOver: true, guessedWord: true });
     }
 
-    if (currentAttempt.attempt === 5 && currWord !== correctWord) {
+    if (
+      currentAttempt.attempt === 5 &&
+      currWord.toUpperCase() !== correctWord.toUpperCase()
+    ) {
       setGameOver({ gameOver: true, guessedWord: false });
     }
   };

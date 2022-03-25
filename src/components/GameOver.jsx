@@ -9,7 +9,7 @@ const GameOver = () => {
       <h3>
         {gameOver.guessedWord ? 'Yay, You Won :)' : 'Better Luck Next Time :('}
       </h3>
-      <h1>Correct: {correctWord}</h1>
+      <h1>Correct: {correctWord.toUpperCase()}</h1>
       {gameOver.guessedWord && (
         <h3>You guessed the correct word in {currentAttempt.attempt} attemps.</h3>
       )}
