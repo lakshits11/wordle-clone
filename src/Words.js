@@ -19,7 +19,7 @@ export const generateWordSet = async () => {
       generatedWord = wordArr[Math.floor(Math.random() * wordArr.length)];
       wordSet = new Set(wordArr);
     });
-  console.log(generatedWord);
+  // console.log(generatedWord);
 
   return { wordSet, generatedWord };
 };
