@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap');
+@font-face {
+  font-family: 'Dilo World';
+  src: url('//db.onlinewebfonts.com/t/7409a274f7beeed9b9a8ff5fe5396706.eot');
+  src: url('//db.onlinewebfonts.com/t/7409a274f7beeed9b9a8ff5fe5396706.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/7409a274f7beeed9b9a8ff5fe5396706.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/7409a274f7beeed9b9a8ff5fe5396706.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/7409a274f7beeed9b9a8ff5fe5396706.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/7409a274f7beeed9b9a8ff5fe5396706.svg#Dilo World')
+      format('svg');
+}
 
 * {
   font-family: Comfortaa;
@@ -36,7 +50,6 @@ nav {
 
 nav h1 {
   margin: 15px;
-  font-family: Comfortaa;
   font-size: 45px;
   background: #ff179a;
   background: -webkit-linear-gradient(90deg, #ffc04b, rgba(41, 218, 168, 1));
@@ -160,7 +173,6 @@ nav h1 {
   -webkit-background-clip: text;
   border-image-slice: 1;
   color: transparent;
-
   cursor: pointer;
 }
 
@@ -177,4 +189,23 @@ nav h1 {
 
 #disabled {
   background-color: #303030;
+}
+
+nav h1,
+h3,
+h1 {
+  font-family: Dilo World;
+  font-weight: 200;
+  font-size: 46px;
+}
+
+h1,
+h3 {
+  background: #ff179a;
+  background: -webkit-linear-gradient(90deg, #ffc04b, rgba(41, 218, 168, 1));
+  background: -moz-linear-gradient(90deg, #ffc04b, rgba(41, 218, 168, 1));
+  background: linear-gradient(90deg, #ffc04b, rgba(41, 218, 168, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
