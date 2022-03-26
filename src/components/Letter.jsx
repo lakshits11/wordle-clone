@@ -5,7 +5,6 @@ const Letter = ({ letterPosition, attemptValue }) => {
   const {
     board,
     correctWord,
-    setCorrectWord,
     currentAttempt,
     setDisabledLetters,
     setCorrectLetters,
