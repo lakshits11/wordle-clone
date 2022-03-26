@@ -59,8 +59,10 @@ function App() {
       setGameOver({ gameOver: true, guessedWord: true });
     }
 
+    console.log(wordSet);
     if (
-      currentAttempt.attempt === 5 &&
+      currentAttempt.attempt >= 5 &&
+      wordSet.has(currWord.toLowerCase()) &&
       currWord.toUpperCase() !== correctWord.toUpperCase()
     ) {
       setGameOver({ gameOver: true, guessedWord: false });

@@ -2,6 +2,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 // import reportWebVitals from './reportWebVitals';
 
+// alert("Refresh the page to start a new game!");
 ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
